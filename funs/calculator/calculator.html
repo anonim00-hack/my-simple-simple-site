@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>простой калькулятор</title>
+    <link rel="stylesheet" href="/funs/calculator/calculator.css">
+    <link rel="icon" href="/img/calculator_logo.png">
+</head>
+
+<body tabindex="0">
+
+    <div class="container">
+        <div class="input_box">
+            <div class="window"></div>
+            <input type="text">
+            <span>ответ: <p></p></span>
+        </div>
+        <div class="btns">
+            <div class="btn_number_box d">
+                <button onclick="one()" class="btn">1</button>
+                <button onclick="two()" class="btn">2</button>
+                <button onclick="tree()" class="btn">3</button>
+                <button onclick="four()" class="btn">4</button>
+                <button onclick="five()" class="btn">5</button>
+                <button onclick="six()" class="btn">6</button>
+                <button onclick="seven()" class="btn">7</button>
+                <button onclick="eight()" class="btn">8</button>
+                <button onclick="nine()" class="btn">9</button>
+                <button onclick="zero()" class="zero btn">0</button>
+            </div>
+            <hr class="number_p_m">
+            <div class="btn-plus-minus d">
+                <button onclick="backspace()" class="backspace p_m"><<</button>
+                <button onclick="plus()" class="p_m btn">+</button>
+                <button onclick="minus()" class="p_m btn">-</button>
+                <button onclick="skob1()" class="p_m btn">(</button>
+                <button onclick="skob2()" class="p_m btn">)</button>
+                <button onclick="form()" class="p_m btn">e+1</button>
+                <button onclick="umn()" class="p_m btn">*</button>
+                <button onclick="del()" class="p_m btn">/</button>
+                <button onclick="ravno()" class=" btn">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="/funs/calculator/calculator.js"></script>
+</body>
+
+</html>
