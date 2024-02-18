@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="img/Home_logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <a class="Home_text" href="home.html">
+                <h1>Home <img class="logo_img" src="img/Home_logo.png" alt="logo"></h1>
+            </a>
+            <div class="btns">
+                <button class="all btn">All</button>
+                <hr class="line_Y">
+                <button class="lives btn">Favourite</button>
+            </div>
+            <input type="search" class="search_input">
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="other">
+                <button onclick="newel()" class="create_el">
+                    <div class="plus"></div>
+                </button>
+                <ul class="content_box">
+                    <li class="content">
+                        <div class="small_content">
+                            <a target="_blank" href="funs/calculator/calculator.html">
+                                <h3 class="content_text">calculator</h3>
+                            </a>
+                            <img src="/img/calculator_logo.png" class="content_img">
+                        </div>
+                        <span class="content_des">This is a simple calculator</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <div class="quistion_box">
+    </div>
+    <!-- quistions -->
+    <form action="#" class="quistions">
+        <input required class="inp inp_name" placeholder="Name" type="text">
+        <input required class="inp inp_des" placeholder="Description" type="text">
+        <input name="url" required class="inp inp_img" placeholder="Img url" type="url">
+        <input name="url" required class="inp inp_link" placeholder="Link" type="url">
+        <div class="btn_box">
+            <button class="btnapply btn_ok">OK</button>
+            <button class="btnapply btn_close">close</button>
+        </div>
+    </form>
+    <script src="Home.js"></script>
+</body>
+
+</html>
