@@ -1,0 +1,61 @@
+.cubic_box{
+    width:250px;
+    height:250px;
+    background:blue;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    transition:all 0.5s;
+}
+.inform{
+    margin:10px;
+    font-size:20px;
+    font-weight:700;
+}
+.red_cubic{
+    width:100px;
+    height:100px;
+    background:red;
+    transition:all 0.2s;
+    border-radius:50%;
+}
+.num{
+    font-size:20px;
+    position:absolute;
+    right:100px;
+    top:10px;
+}
+.bright{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    backdrop-filter:brightness(0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    top:0;
+    background:green;
+    width:500px;
+    height:100%;
+    padding:10px;
+}
+.description{
+    color:yellow;
+    font-weight:600;
+    border-bottom:2px solid yellow;
+    padding-bottom:5px;
+}
+.btn_lv{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    background:yellow;
+    font-weight:600;
+    margin-bottom:20px;
+}

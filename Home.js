@@ -68,8 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
         elboxdes.textContent = eldescript.value;
 
         elboxbut.addEventListener('click', () => {
-            elbigBox.removeChild(elbox);
-            removeFromLocalStorage(elbox); // Удаляем элемент из локального хранилища
+            if (confirm('delete ?')) {
+                elbigBox.removeChild(elbox);
+                removeFromLocalStorage(elbox); // Удаляем элемент из локального хранилища
+            }
         });
 
         saveToLocalStorage(elbox); // Сохраняем элемент в локальное хранилище
