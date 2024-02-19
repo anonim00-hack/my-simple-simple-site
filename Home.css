@@ -89,23 +89,6 @@ button{
     width:20px;
     position:absolute;
 }
-.btns{
-    display:flex;
-    align-items:center;
-}
-.btn{
-    border:none;
-    background:transparent;
-    font-size:20px;
-    color:rgb(255,255,0);
-}
-.line_Y{
-    background:yellow;
-    width:2px;
-    height:80%;
-    border:none;
-    margin:0 7px;
-}
 .search_input{
     padding:5px;
     font-size: 18px;
@@ -272,9 +255,6 @@ button{
 @media screen and (max-width:600px) {
     .content_box{
         grid-template-columns:repeat(1,1fr);
-    }
-    .btns{
-        display:none;
     }
     .Home_text{
         font-size:15px;

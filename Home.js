@@ -67,13 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
         elboxLink.textContent = elname.value;
         elboxdes.textContent = eldescript.value;
 
-        elboxbut.addEventListener('click', () => {
-            if (confirm('delete ?')) {
-                elbigBox.removeChild(elbox);
-                removeFromLocalStorage(elbox); // Удаляем элемент из локального хранилища
-            }
-        });
-
         saveToLocalStorage(elbox); // Сохраняем элемент в локальное хранилище
     }
 
@@ -164,4 +157,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+});
+const elboxbut = document.createElement('button');
+elboxbut.addEventListener('click', () => {
+    if (confirm('delete ?')) {
+        elbigBox.removeChild(elbox);
+        removeFromLocalStorage(elbox); // Удаляем элемент из локального хранилища
+    }
 });
