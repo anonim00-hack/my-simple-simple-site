@@ -32,8 +32,10 @@ function zero() {
     elinp.value += '0';
 }
 function backspace() {
-    elinp.value += push() = '';
+    var value = elinp.value;
+    elinp.value = value.slice(0, -1);
 }
+
 function plus() {
     elinp.value += '+';
     elinp.value = elinp.value.replaceAll('++','+')
@@ -47,10 +49,6 @@ function skob1() {
 }
 function skob2() {
     elinp.value += ')';
-}
-function form() {
-    elinp.value += 'e+1';
-    elinp.value = elinp.value.replaceAll('e+1e+1','e+1')
 }
 function umn() {
     elinp.value += '*';
