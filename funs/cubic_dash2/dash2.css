@@ -1,0 +1,22 @@
+.game_zone{
+    margin:auto auto;
+    width:800px;
+    height:400px;
+    border:2px solid black;
+    position:relative;
+}
+.player{
+    width:100px;
+    height:100px;
+    background:green;
+    position:absolute;
+    bottom:0;
+    left:20px;
+    transition:all 0.8s;
+}
+.enemy{
+    background:url('/img/domla.jpg');
+    background-size:cover;
+    width:100px;
+    height:200px;
+}
