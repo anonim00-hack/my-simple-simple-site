@@ -6,6 +6,10 @@
     list-style:none;
     transition:all 0.5s;
 }
+*:focus{
+    border:red 2px dashed;
+    outline:none;
+}
 .container{
     width:100%;
     max-width:1140px;
@@ -179,10 +183,10 @@ button{
 .content_text{
     text-transform:uppercase;
     font-weight:700;
-    margin-bottom:20px;
     display:inline-block;
 }
 .content_img{
+    margin-top:20px;
     width:100%;
     max-width:100px;
     border-radius:5px;

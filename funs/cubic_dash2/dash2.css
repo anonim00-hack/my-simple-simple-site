@@ -1,22 +1,30 @@
-.game_zone{
+#game-zone {
     margin:auto auto;
-    width:800px;
-    height:400px;
-    border:2px solid black;
-    position:relative;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow: hidden;
 }
-.player{
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    bottom: 0;
+    left: 50px; /* начальное положение */
+    transition: transform 1s; /* анимация прыжка */
+    animation: none; /* отключаем анимацию по умолчанию */
+}
+.cub{
     width:100px;
     height:100px;
-    background:green;
     position:absolute;
     bottom:0;
-    left:20px;
-    transition:all 0.8s;
 }
-.enemy{
-    background:url('/img/domla.jpg');
-    background-size:cover;
-    width:100px;
-    height:200px;
+@keyframes jumpAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
 }
