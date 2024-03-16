@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select:none;
+}
+body{
+    background:black;
+}
+/* body */
+
+.bod1{
+    background:url(https://files.tpg.ua/pages2/226207/krepost_nojshvanshtajn.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.bod2{
+    background:url(https://content.skyscnr.com/m/3dc8e3aed6bb99ed/original/eyeem-26050266-171224885.jpg?resize=2560px:1700px);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.bod3{
+    background:url(https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner__blog_post_banner/public/2021-01/Kirkjufell-volcano.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.bod4{
+    background:url(https://content.skyscnr.com/m/77f68942602f0c1e/original/ples_summer_russia.jpg?resize=1800px:1800px&quality=100);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.boy{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
+.e1{
+    backdrop-filter:brightness(1.3);
+}
+.e2{
+    backdrop-filter:blur(50px);
+}
+.e3{
+    backdrop-filter:grayscale(100);
+}
+.e4{
+    backdrop-filter:contrast(50);
+}

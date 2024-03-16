@@ -3,8 +3,26 @@ const elcubic = document.querySelector('.cubic_box');
 const elcubic2 = document.querySelector('.red_cubic');
 const elenemy = document.querySelector('.enemy');
 const elnum = document.querySelector('.number');
+const elApply = document.querySelector('.apply');
+const lvlBox = document.querySelector('.box');
+const bgBright = document.querySelector('.gray');
+const elTextInp = document.querySelector('.inp_text');
+const bgInp = document.querySelector('#bg');
+const body = document.querySelector('body');
+const color = elTextInp.textContent.split('').reverse();
+color.unshift('#');
+const color2 = color.join('').slice(0, -1);
 const random = Math.trunc(Math.random() * 500 + 1) + 'px, ' + Math.trunc(Math.random() * 300 + 1)
-lvl.addEventListener('input', () => {
+bgInp.addEventListener('input',()=>{
+    body.style.background = bgInp.value;
+    elcubic2.style.background = color2;
+    elTextInp.textContent = bgInp.value;
+})
+elApply.addEventListener('click', () => {
+    if (lvl.value !== 'none') {
+        bgBright.classList.remove('gray');
+        lvlBox.style.display = 'none';
+    }
     if (lvl.value === 'ease') {
         // Функция для проверки столкновения
         function checkCollision1() {
@@ -126,4 +144,8 @@ lvl.addEventListener('input', () => {
         }, 100
         )
     }
+})
+document.addEventListener('DOMContentLoaded', () => {
+    lvlBox.style.display = 'block';
+    bgBright.classList.add('gray');
 })

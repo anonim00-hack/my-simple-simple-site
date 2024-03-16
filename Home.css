@@ -147,6 +147,10 @@ button{
     height:100%;
     max-height:160px;
     position:relative;
+    transition:all 0.3s;
+}
+.content:hover{
+    transform:scale(1.05);
 }
 .content:hover .delete_el{
     width:30px;
@@ -183,7 +187,28 @@ button{
 .content_text{
     text-transform:uppercase;
     font-weight:700;
-    display:inline-block;
+    transition:all 0.3s;
+    display:inline-flex;
+    flex-direction:column-reverse;
+    position:relative;
+}
+.content_text:hover{
+    color:white;
+}
+.content_text::after{
+    transition:all 0.5s;
+    content:'';
+    background:aqua;
+    width:100%;
+    max-width:0;
+    position:absolute;
+    left:50%;
+}
+.content_text:hover::after{
+    display:inline-flex;
+    left:0;
+    height:5px;
+    max-width:100%;
 }
 .content_img{
     margin-top:20px;
@@ -242,7 +267,7 @@ button{
     }
     .content_text{
         font-weight:600;
-        margin-bottom:10px;
+        margin-bottom:5px;
         font-size:15px;
     }
     .search_input{
